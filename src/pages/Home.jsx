@@ -1,5 +1,8 @@
 import React from 'react'
 import Hero from '../components/Hero/Hero'
+import Places from '../components/places/Places'
+import Banner from '../components/Banner/Banner'
+import Blogs from './Blogs'
 
 const Home = () => {
   return (
@@ -11,6 +14,9 @@ const Home = () => {
           </video>
           <Hero/>
         </div>
+        <Places/>
+        <Banner/>
+        <Blogs/>
       </div>
     </div>
   )
