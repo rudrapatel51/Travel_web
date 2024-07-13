@@ -1,7 +1,23 @@
-import React from 'react';
+import React ,{ useEffect} from 'react';
+import { Link } from 'react-router-dom';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const BlogCard = ({ image, date, title, description, author }) => {
+ 
+  useEffect(() => {
+    AOS.init();
+  }, [])
+
+
   return (
+    <Link
+    to={`/blogs/${title}`}
+    onClick={() => {
+      window.scroll(0,0);
+    }}
+    state={{image, date, title, description, author }}>
+      <div data-aos="fade-left" >
     <article className="flex flex-col dark:bg-gray-50">
       <a rel="noopener noreferrer" href="#" aria-label={title}>
         <img alt="" className="object-cover w-full h-52 dark:bg-gray-500" src={image} />
@@ -17,6 +33,8 @@ const BlogCard = ({ image, date, title, description, author }) => {
         </div>
       </div>
     </article>
+    </div>
+    </Link>
   );
 };
 
