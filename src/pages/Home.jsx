@@ -1,12 +1,15 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Hero from '../components/Hero/Hero'
 import Places from '../components/places/Places'
 import Banner from '../components/Banner/Banner'
 import Blogs from './Blogs'
 import BannerWithImage from '../components/Banner_image/BannerWithImage'
 import Testomonials from '../components/testomonials/Testomonials'
+import FormPopup from '../components/popup/FormPopup'
 
 const Home = () => {
+
+  
   return (
     <div>
       <div>
@@ -21,6 +24,7 @@ const Home = () => {
         <Blogs/>
         <BannerWithImage/>
         <Testomonials/>
+        <FormPopup />
       </div>
     </div>
   )

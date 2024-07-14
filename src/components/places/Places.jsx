@@ -45,7 +45,7 @@ const products = [
   },
 ];
 
-const Places = () => (
+const Places = ({handleOrderPopup}) => (
   <div className="container mx-auto">
     <h1 className="text-4xl font-bold text-left my-8 border-l-8 border-primary/50 py-2 pl-2">Best Places To Visits</h1>
     <div className="flex flex-wrap -mx-4">

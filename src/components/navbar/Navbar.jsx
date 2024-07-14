@@ -1,8 +1,10 @@
-import React, { useState } from 'react'
+import React, { useState , useContext} from 'react'
 import { FaCaretDown } from 'react-icons/fa'
 import { HiMenuAlt1, HiMenuAlt3 } from 'react-icons/hi'
 import { Link, NavLink } from 'react-router-dom'
 import ResponsiveMenu from "./ResponsiveMenu"
+import { OrderPopupContext } from '../../Hooks/OrderPopupProvider';
+
 
 
 const DropDownLinks = [
@@ -21,6 +23,13 @@ const DropDownLinks = [
 ]
 
 const Navbar = () => {
+
+
+    const { setOrderPopup } = useContext(OrderPopupContext);
+
+  const handleOrderPopup = () => {
+    setOrderPopup(true);
+  };
 
 const [showMenu,setShowMenu] = useState(false)
 
@@ -100,7 +109,7 @@ const toggleMenu = () => {
             </div>
             {/* Book Now button */}
             <div className='flex items-center gap-4'>
-                <button className='text-white bg-secondary hover:bg-primary focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2'>
+                <button onClick={handleOrderPopup} className='text-white bg-secondary hover:bg-primary focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2'>
                     Book Now
                 </button>
                 {/* Mobile hamburgerMenu Menu */}

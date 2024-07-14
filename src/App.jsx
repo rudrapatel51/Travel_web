@@ -7,10 +7,11 @@ import Blogs from "./pages/Blogs"
 import BlogsDetails from "./pages/BlogsDetails"
 import PlacesRoute from "./pages/PlacesRoute"
 import NoPage from "./pages/NoPage"
+import { OrderPopupProvider } from './Hooks/OrderPopupProvider'
 
 const App = () => {
   return (
-    <>
+    <OrderPopupProvider>
     <BrowserRouter>
     <Routes>
     <Route path="/" element={<Layout/>}>
@@ -23,7 +24,7 @@ const App = () => {
     </Route>
     </Routes>
     </BrowserRouter>
-    </>
+    </OrderPopupProvider>
   )
 }
 

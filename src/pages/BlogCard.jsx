@@ -19,9 +19,7 @@ const BlogCard = ({ image, date, title, description, author }) => {
     state={{image, date, title, description, author }}>
       <div data-aos="fade-left" >
     <article className="flex flex-col dark:bg-gray-50">
-      <a rel="noopener noreferrer" href="#" aria-label={title}>
         <img alt="" className="object-cover w-full h-52 dark:bg-gray-500" src={image} />
-      </a>
       <div className="flex flex-col flex-1 p-6">
         <a rel="noopener noreferrer" href="#" aria-label={title} className="text-xs tracking-wider uppercase hover:underline dark:text-violet-600">
           {author}

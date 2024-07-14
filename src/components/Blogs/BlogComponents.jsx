@@ -5,7 +5,7 @@ const BlogComponents = () => {
   const BlogData = [
     {
       id: 1,
-      image: './blog1.jpeg',
+      image: '/blog1.jpeg',
       title: 'Hello',
       description: 'This trip was super amazing by help of travelwithus.',
       author: 'Harry',
@@ -13,7 +13,7 @@ const BlogComponents = () => {
     },
     {
       id: 2,
-      image: './blog2.jpg',
+      image: '/blog2.jpg',
       title: 'Adventure Awaits',
       description: 'Discover the hidden gems with our exclusive tours.',
       author: 'Sally',
@@ -21,7 +21,7 @@ const BlogComponents = () => {
     },
     {
       id: 3,
-      image: './blog3.jpg',
+      image: '/blog3.jpg',
       title: 'Travel Tips',
       description: 'Top 10 tips for a safe and enjoyable trip.',
       author: 'John',
@@ -29,7 +29,7 @@ const BlogComponents = () => {
     },
     {
       id: 4,
-      image: './blog4.jpg',
+      image: '/blog4.jpg',
       title: 'Cultural Experiences',
       description: 'Immerse yourself in local cultures and traditions.',
       author: 'Jane',

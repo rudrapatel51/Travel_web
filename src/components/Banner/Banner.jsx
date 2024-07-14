@@ -6,8 +6,6 @@ const Banner = () => {
   
   useEffect(() => {
     AOS.init({
-      duration: 400,
-      delay: 200,
       easing: "ease-out-cubic",
     });
   }, []);
