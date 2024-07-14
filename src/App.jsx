@@ -7,7 +7,9 @@ import Blogs from "./pages/Blogs"
 import BlogsDetails from "./pages/BlogsDetails"
 import PlacesRoute from "./pages/PlacesRoute"
 import NoPage from "./pages/NoPage"
+import Loaction from './pages/Loaction'
 import { OrderPopupProvider } from './Hooks/OrderPopupProvider'
+import "./App.css"
 
 const App = () => {
   return (
@@ -20,6 +22,7 @@ const App = () => {
     <Route path="blogs" element={<Blogs/>}/>
     <Route path="blogs/:id" element={<BlogsDetails/>}/>
     <Route path="places" element={<PlacesRoute/>}/>
+    <Route path="location" element={<Loaction/>}/>
     <Route path="*" element={<NoPage/>}/>
     </Route>
     </Routes>

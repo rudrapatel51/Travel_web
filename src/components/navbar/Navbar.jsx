@@ -9,16 +9,16 @@ import { OrderPopupContext } from '../../Hooks/OrderPopupProvider';
 
 const DropDownLinks = [
     {
+        name : "Location",
+        link : "/location",
+    },
+    {
         name : "Our Services",
         link : "/#services",
     },
     {
         name : "Top Brands",
         link : "/#mobile_brands",
-    },
-    {
-        name : "Location",
-        link : "/#location",
     }
 ]
 
@@ -45,7 +45,7 @@ const toggleMenu = () => {
             <div className='container py-[2px] sm:block hidden'>
                 <div className="flex justify-between py-[2px]">
                     <p>20% off on first Booking</p>
-                    <p>Mobile No. +91 1234567890</p>
+                    <p>Mobile No.<Link to="tel:+91 123456887">+91 1234567890 </Link></p>
                 </div>
             </div>
         </div>
