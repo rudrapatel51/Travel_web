@@ -36,7 +36,7 @@ const FormPopup = () => {
   return (
     <>
       {orderPopup && (
-        <div className='h-screen w-screen fixed top-0 left-0 bg-black/50 z-50 backdrop-blur-sm'>
+        <div className='h-screen w-screen fixed top-0 left-0 border border-black z-50 backdrop-blur-sm'>
           <div className='fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white p-4 rounded-md w-[300px]'>
             {/* header */}
             <div className='flex items-center justify-between'>

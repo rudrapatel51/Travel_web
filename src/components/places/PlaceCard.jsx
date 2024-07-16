@@ -2,6 +2,7 @@ import React, { useEffect, useContext } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { OrderPopupContext } from '../../Hooks/OrderPopupProvider';
+import FormPopup from "../popup/FormPopup"
 
 const PlaceCard = ({ id, title, description, imageUrl, link, price }) => {
   useEffect(() => {
@@ -15,6 +16,7 @@ const PlaceCard = ({ id, title, description, imageUrl, link, price }) => {
   };
 
   return (
+    <>
     <div data-aos="fade-left" className="w-full md:w-1/2 lg:w-1/3 px-4 mb-8 p-5">
       <div onClick={handleOrderPopup} className="relative max-w-sm rounded-lg shadow-lg bg-white transform transition duration-300 hover:-translate-y-2 hover:shadow-2xl">
         <a href={link}>
@@ -38,6 +40,8 @@ const PlaceCard = ({ id, title, description, imageUrl, link, price }) => {
         </div>
       </div>
     </div>
+      <FormPopup/>
+      </>
   );
 };
 
