@@ -33,7 +33,6 @@ const products = [
     imageUrl: '/delhi.jpg',
     link: '#',
     price: 2000,
-
   },
   {
     id: 5,
@@ -43,7 +42,88 @@ const products = [
     link: '#',
     price: 1000,
   },
+  {
+    id: 6,
+    title: 'Goa',
+    description: "Goa is a state in western India with coastlines stretching along the Arabian Sea.",
+    imageUrl: '/goa.jpg',
+    link: '#',
+    price: 6000,
+  },
+  {
+    id: 7,
+    title: 'Jaipur',
+    description: "Jaipur is the capital of India’s Rajasthan state, known as the 'Pink City'.",
+    imageUrl: '/jaipur.jpeg',
+    link: '#',
+    price: 3500,
+  },
+  {
+    id: 8,
+    title: 'Rishikesh',
+    description: "Rishikesh is a city in India’s northern state of Uttarakhand, in the Himalayan foothills.",
+    imageUrl: '/rishikesh.jpeg',
+    link: '#',
+    price: 2500,
+  },
+  {
+    id: 9,
+    title: 'Agra',
+    description: "Agra is a city on the banks of the Yamuna river in Uttar Pradesh, India, home to the Taj Mahal.",
+    imageUrl: '/agra.jpeg',
+    link: '#',
+    price: 4500,
+  },
+  {
+    id: 10,
+    title: 'Shimla',
+    description: "Shimla is the capital of the northern Indian state of Himachal Pradesh, in the Himalayan foothills.",
+    imageUrl: '/shimla.jpeg',
+    link: '#',
+    price: 3200,
+  },
+  {
+    id: 11,
+    title: 'Pondicherry',
+    description: "Pondicherry is a French colonial settlement in India, located on the southeastern coast.",
+    imageUrl: '/pondicherry.jpeg',
+    link: '#',
+    price: 2800,
+  },
+  {
+    id: 12,
+    title: 'Mysore',
+    description: "Mysore is a city in India's southwestern Karnataka state, known for its heritage structures.",
+    imageUrl: '/mysore.jpeg',
+    link: '#',
+    price: 2300,
+  },
+  {
+    id: 13,
+    title: 'Ooty',
+    description: "Ooty is a resort town in the Western Ghats mountains, in Tamil Nadu state, southern India.",
+    imageUrl: '/ooty.jpeg',
+    link: '#',
+    price: 2700,
+  },
+  {
+    id: 14,
+    title: 'Varanasi',
+    description: "Varanasi is a city in northern India, considered to be the spiritual capital of the country.",
+    imageUrl: '/varanasi.jpeg',
+    link: '#',
+    price: 3000,
+  },
+  {
+    id: 15,
+    title: 'Leh',
+    description: "Leh is a town in the Leh district of the Ladakh region of northern India.",
+    imageUrl: '/leh.jpeg',
+    link: '#',
+    price: 7000,
+  }
 ];
+
 
 const Places = ({handleOrderPopup}) => (
   <div className="container mx-auto">
